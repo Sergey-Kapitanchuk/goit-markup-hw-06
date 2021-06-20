@@ -741,6 +741,16 @@ img {
   cursor: pointer;
 }
 
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden {
   transform: scale(0);
   transition: transform 250ms linear;
@@ -832,7 +842,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-agree::before {
+/* .modal-form-agree::before {
   content: '';
   border-radius: 2px;
   width: 16px;
@@ -841,20 +851,26 @@ img {
   display: inline-block;
   margin-right: 7px;
   vertical-align: middle;
-}
+} */
 
-.modal-form-check:checked + .modal-form-agree::before {
-  /* background-image: url(../images/logo/icons.svg#icon-vector); */
+.modal-form-check:checked + .modal-form-agree .modal-form-check-icon {
+  /* background-image: url(../images/logo/Vector.svg); */
   background-color: var(--accent-color);
   outline: none;
   border-color: var(--accent-color);
 }
 
 .modal-form-check-icon {
-  position: absolute;
   left: 2px;
   top: 8px;
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  display: inline-block;
+  margin-right: 7px;
   fill: var(--white-color);
+  vertical-align: middle;
 }
 
 .modal-form-agree {
