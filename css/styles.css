@@ -130,8 +130,8 @@ img {
 }
 .list.aside {
   color: var(--title-text-color);
-  margin-right: 15px;
 }
+
 .list.aside li:not(:last-child) {
   margin-right: 50px;
 }
