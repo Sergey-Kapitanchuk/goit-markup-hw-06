@@ -41,7 +41,8 @@ body {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: auto 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* border-width: 1600px; */
 }
 
