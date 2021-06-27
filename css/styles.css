@@ -585,7 +585,6 @@ img {
 
 .logo-footer {
   color: var(--white-color);
-  padding: 0%;
 }
 
 .address {
@@ -703,10 +702,9 @@ img {
 .modal {
   position: fixed;
   top: 0;
-  left: 0%;
+  left: 0;
   transform: scale(1);
   transition: transform 250ms linear;
-
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
